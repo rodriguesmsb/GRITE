@@ -3,177 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/1db498a573.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="logo.ico" />
     <title>GRITE</title>
 </head>
-<body style = "width: 99vw;">
+<body>
 
-    <div class = "header">
-        <div class="six-col"  style="height: 99%;">
-            <div class="two-col" style="height: 99%; margin-left: 5px">
-                <img src="www/logo.png"></img>
-            </div>
-        </div>
+    <div id="container">
+        <header>
+            <img src="www/logo.png" class = "logo">
 
-        <div class="six-col">
-            <div class="topnav">
-                <div class="login-container">
-                    <form action="/action_page.php">
-                      <input type="text" placeholder="Username" name="username">
-                      <input type="text" placeholder="Password" name="psw">
-                      <button type="submit">Login</button>
-                    </form>
-                  </div>
-            </div>
-        </div>
-    </div>
+            <!--create a login section-->
+            <form action="" class="login">
+                <div class = "input">
+                    <label for = "user">User Name</label>
+                    <input type = "text" required id = "user">
+                </div>
+                <div class="input">
+                    <label for = "password">Password</label>
+                    <input type = "password" required id ="password">
+                </div>
+                <div class="button">
+                    <button type="submit">Login</button>
+                </div>
+             </form>
+        </header>
 
-    <div class="menu-principal">
+       
 
-        <div class="six-col">
-            <div class="one-col" style="margin-top: 10px">
-                <img src="www/home.png"></img>
-            </div>
+        <nav>
+            <a href="" class="navigation-item"><i class="fa fa-home"></i></a>
+            <a href="" class="navigation-item">Service</a>
+            <a href="" class="navigation-item">About</a>
+            <a href="" class="navigation-item">Contact</a>
+        </nav>
 
-            <div class="two-col">
+        <main>
+            <div class="menu">
                 <nav>
-                    <ul class="nav">
-                        <li></li><a style="margin-top: 10px;">Notícias</a></li>
-                    </ul>
+
                 </nav>
             </div>
 
-            <div class="two-col">
-                <nav>
-                    <ul class="nav">
-                        <li><a href="#" style="margin-top: 10px;">Serviços</a>
-                            <ul>
-                                <li><a>Gerador de pitch</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+            <div class="main-body">
 
-                </nav>
-                
             </div>
-        </div>
+
+        </main>
+
+        <footer>
+            <div class="socials">
+                <a href="#" class="socials-items"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="socials-items"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="socials-items"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="socials-items"><i class="fa fa-youtube-play"></i></a>
+            </div>
+        </footer>
         
-        <div class="six-col">
-            <div class="one-col"  style="float: right; margin-top: 10px;"><img src="www/fb.png"></img></div>
-            <div class="one-col"  style="float: right; margin-top: 10px;"><img src="www/twiter.png"></img></div>
-            <div class="one-col"  style="float: right; margin-top: 10px;"><img src="www/instagram.png"></div>
-        </div>
     </div>
+
     
-    <div style="width:99vw">
+    
 
-        <div class="side-bar">
-
-            <div style="width: 95%; height: 5vh; margin-top: 10px">
-
-                <div class="one-col">
-                    <img src="www/virus.png" style="margin-left: 10px;"></img>
-                </div>
-
-                <div class="six-col" style="float:left; width:70%; margin-left: 10px;">
-                    <p class="menu-principal-texto" style="width:70%; margin-left: 10px">Selecione sua área de interesse</p>
-                </div>
-
-            </div>
-
-            <div class="side-bar-icon">
-                <nav>
-                    <ul class="nav" style="float: left;">
-                        <li><a href="#">Doenças virais</a>
-                            <ul>
-                                <li><a>Dengue</a></li>
-                                <li><a>Zika</a></li>
-                                <li><a>covid-19</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="side-bar-icon">
-                <nav>
-                    <ul class="nav" style="float: left;">
-                        <li><a href="#">Doenças Transmissíveis</a>
-                            <ul>
-                                <li><a>Tuberculose</a></li>
-                                <li><a>AIDS</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="side-bar-icon">
-                <nav>
-                    <ul class="nav" style="float: left;">
-                        <li><a href="#">Doenças não Transmissíveis</a>
-                            <ul>
-                                <li><a>Hipertensão</a></li>
-                                <li><a>Daibetes</a></li>
-                                <li><a>Câncer</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="side-bar-icon">
-                <nav>
-                    <ul class="nav" style="float: left;">
-                        <li><a href="#">Doenças causadas por protozoários</a>
-                            <ul>
-                                <li><a>Malária</a></li>
-                                <li><a>Leishmaniose</a></li>
-                                <li><a>Chagas</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="side-bar-icon">
-                <nav>
-                    <ul class="nav" style="float: left;">
-                        <li><a href="#">Acidentes provados por animais peçonhentos</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>  
-        </div>
-
-        <div class="body">
-            <div class="five-col" style="float: left; margin-left: 70px;  margin-top: 50px;">
-                <p>
-                    Selecionar uma figura para por aqui
-                </p>
-            </div>
-
-            <div class="five-col" style="float: left; margin-left: 70px;  margin-top: 50px;">
-                <p style="font-size: 22px; text-align: justify;">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Vestibulum congue vitae justo et facilisis. Maecenas sed 
-                    lorem eget dolor pretium semper vel at eros. Praesent eget 
-                    risus in neque finibus tempor sit amet nec massa. Nullam varius 
-                    enim sed varius maximus. Curabitur vulputate, justo aliquet finibus 
-                    consequat, neque ante malesuada eros, eu consectetur dolor leo eget turpis. 
-                    Phasellus et arcu est. Morbi non massa id lorem tempor efficitur ac ut dolor. 
-                    Fusce malesuada viverra molestie. Sed volutpat ipsum magna, vel luctus ipsum luctus vel. 
-                    Aenean rhoncus aliquet nisi, ac aliquam nulla tincidunt et. Nam mauris libero, 
-                    volutpat ac ipsum non, vestibulum porttitor lacus. Duis maximus, elit semper pellentesque 
-                    luctus, nisl ex blandit mi, vitae maximus urna massa eu ligula. Pellentesque at sollicitudin ante. 
-                    Phasellus et finibus mauris, vel tincidunt arcu. Donec efficitur luctus venenatis. Nulla tincidunt 
-                    augue sed purus accumsan lobortis. Sed finibus velit nec lectus hendrerit dapibus. Mauris id vestibulum 
-                    enim, vitae posuere justo. Praesent sodales nec velit a pharetra.
-                </p>
-            </div>
-        </div>
-
-    </div>
+ 
+    
 </body>
 </html>

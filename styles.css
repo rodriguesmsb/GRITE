@@ -1,275 +1,61 @@
-.one-col{
-    width: 8.33%;
-    height: 80%;
-    display: flex;
-    float: left;
-    justify-content: center;
-    
+*{
+  box-sizing: border-box;
+  font: inherit;
+  color: inherit;
 }
 
 
-.two-col{
-    width: 16.55%;
-    height: 80%;
-    display: flex;
-    float: left;
-    justify-content: center;
+body{
+  padding: 0;
+  margin: 0;
+  color: #333;
 }
 
-.three-col{
-    width: 16.55%;
-    height: 80%;
-    border: 2px solid;
-    display: flex;
-    float: left;
-    justify-content: center;
+#container{
+  max-width: 1200;
+  border: 1px solid tomato;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto;
+  padding: 24px;
+  height: 100vh;
+  margin: 0 auto;
 }
 
-
-.five-col{
-    width: 41.65%;
-    height: 80%;
-}
-
-.six-col{
-    width: 50%;
-    height: 80%;
-}
-
-
-.header{
-    background-color: whitesmoke;
-    border: 3px solid #4d94ff;
-    border-radius: 5px;
-    display: flex;
-    height: 16vh;
-    margin-top: -1vh;
-    margin-left:-1vw;
-    width: 99vw;
-}
-
-.title{
-    color: #0000ff;
-    font-size: 38px;
-    
-}
-
-.menu-principal{
-    background-color: whitesmoke;
-    border: 3px solid #4d94ff;
-    border-radius: 5px;
-    display: flex;
-    width: 99vw;
-    height: 5vh;
-    margin-left: -1vw;
-    margin-top: 1vh;
-}
-
-.menu-principal-texto{
-    font-size: 22px; 
-    margin-top: 1px;
-    text-emphasis: bold;
-    font-family: "Roboto Condensed", sans-serif;
-}
-
-.side-bar{
-    background-color: whitesmoke;
-    border: 3px solid #4d94ff;
-    border-radius: 5px;
-    width: 30vw;
-    height: 74vh;
-    margin-left: -1vw;
-    float: left;
-    margin-top: 1vh;
-}
-
-.side-bar-icon{
-    width: 90%; 
-    height: 5vh;
-    background-color: whitesmoke;
-    border: 3px solid #4d94ff;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-left: 10px;
-}
-
-.body{
-    background-color: whitesmoke;
-    border: 3px solid #4d94ff;
-    border-radius: 5px;
-    width: 68vw;
-    height: 74vh;
-    margin-left: 11px;
-    margin-top: 1vh;
-    float: left;
-}
-
-
-
-
-/* Add code for nav bar*/
-nav {    
-    display: block;
-    text-align: center;
-  }
+header{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
   
-  nav ul {
-    margin: 0;
-    padding:0;
-    list-style: none;
-  }
-  
-  .nav a {
-    display:block; 
-    background:whitesmoke; 
-    color: black;
-    text-emphasis: bold;
-    font-family: "Roboto Condensed", sans-serif;
-    text-decoration: none;
-    padding: 0.8em 1.8em;
-    text-transform: uppercase;
-    font-size: 80%;
-    letter-spacing: 2px;
-    text-shadow: 0 -1px 0 #000;
-    position: relative;
-  }
+}
 
-  .nav{  
-    vertical-align: top; 
-    display: inline-block;
-  }
+main{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  border: 1px solid violet;
+  gap: 24px;
+}
 
-  .nav li {
-    position: relative;
-  }
+footer{
+  display: flex;
+  align-items: center;
+  border: 1px solid blue;
+  margin-top: 12px;
+}
 
-  .nav > li { 
-    float: left; 
-  } 
+.logo{
+  grid-column: 1/5;
 
-  .nav > li > a { 
-    margin-bottom: 1px;
-  }
+}
 
-  .nav > li:hover, 
-  .nav > li:hover > a { 
-    border-bottom-color: orange;
-  }
-  .nav li:hover > a { 
-    color:orange; 
-  }
+.login{
+  grid-column: 12;
+}
 
-  .nav > li:first-child { 
-    border-radius: 4px 0 0 4px;
-  } 
-  .nav > li:first-child > a { 
-    border-radius: 4px 0 0 0;
-  }
-  
-  .nav > li:last-child { 
-    border-radius: 0 0 4px 0; 
-    margin-right: 0;
-  } 
-  .nav > li:last-child > a { 
-    border-radius: 0 4px 0 0;
-  }
-  .nav li li a { 
-    margin-top: 1px;
-  }
+.main-body{
+  grid-column: 5/13;
+  border: 1px solid blue;
+}
 
-  .nav li a:first-child:nth-last-child(2):before { 
-    content: ""; 
-    position: absolute; 
-    height: 0; 
-    width: 0; 
-    border: 5px solid transparent; 
-    top: 50% ;
-    right:5px;  
-   }
-
-   /* submenu positioning*/
-.nav ul {
-    position: absolute;
-    white-space: nowrap;
-    border-bottom: 5px solid  orange;
-    z-index: 1;
-    left: -99999em;
-  }
-  .nav > li:hover > ul {
-    left: auto;
-    margin-top: 5px;
-    min-width: 100%;
-  }
-  .nav > li li:hover > ul { 
-    left: 100%;
-    margin-left: 1px;
-    top: -1px;
-  }
-  /* arrow hover styling */
-  .nav > li > a:first-child:nth-last-child(2):before { 
-    border-top-color: black; 
-  }
-  .nav > li:hover > a:first-child:nth-last-child(2):before {
-    border: 5px solid transparent; 
-    border-bottom-color: orange; 
-    margin-top:-5px
-  }
-  .nav li li > a:first-child:nth-last-child(2):before {  
-    margin-top: -5px
-  }
-  .nav li li:hover > a:first-child:nth-last-child(2):before {
-    border: 5px solid transparent; 
-    border-right-color: orange;
-    right: 10px; 
-  }
-
- /* Style the navbar */
-.topnav {
-    overflow: hidden;
-    background-color:whitesmoke;
-  }
-  
-  /* Navbar links */
-  .topnav a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-
-  /* Style the input container */
-.topnav .login-container {
-    float: right;
-  }
-  
-  /* Style the input field inside the navbar */
-  .topnav input[type=text] {
-    padding: 6px;
-    margin-top: 8px;
-    font-size: 17px;
-    border: 1px solid black;
-    width: 150px; /* adjust as needed (as long as it doesn't break the topnav) */
-  }
-  
-  /* Style the button inside the input container */
-  .topnav .login-container button {
-    float: right;
-    padding: 6px;
-    margin-top: 8px;
-    margin-right: 16px;
-    background: #ddd;
-    font-size: 17px;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .topnav .login-container button:hover {
-    background: #ccc;
-  }
-  
-
-
-  
+.menu{
+  grid-column:1/5;
+  border: 1px solid blue;
+}
