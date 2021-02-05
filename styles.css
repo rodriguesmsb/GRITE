@@ -5,6 +5,10 @@
 }
 
 
+a{
+  text-decoration: none;
+}
+
 body{
   padding: 0;
   margin: 0;
@@ -16,6 +20,7 @@ body{
   border: 1px solid tomato;
   display: grid;
   grid-template-rows: auto auto 1fr auto;
+  gap: 24px;
   padding: 24px;
   height: 100vh;
   margin: 0 auto;
@@ -32,6 +37,17 @@ main{
   grid-template-columns: repeat(12, 1fr);
   border: 1px solid violet;
   gap: 24px;
+}
+
+nav{
+  border: 1px solid rgb(51, 209, 117);
+  display: block;
+}
+
+nav ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
 }
 
 footer{
@@ -58,4 +74,114 @@ footer{
 .menu{
   grid-column:1/5;
   border: 1px solid blue;
+}
+
+.navigation-item{
+  margin-left: 12px;
+
+}
+
+.navigation-item:first-child{
+  margin-left: 0;
+}
+
+.socials{
+  margin-right: 24px;
+  
+}
+
+.socials-items{
+  margin-right: 12px;
+}
+
+.socials-items:hover{
+  color: blue;
+}
+
+
+/*add interactive to nav bar*/
+.nav a {
+  display:block; 
+  text-decoration: none;
+  padding: 0.3em 1.0em;
+  position: relative;
+
+  /*use the same background to hide ul */
+  background:white;
+}
+
+.nav{  
+  vertical-align: top; 
+  display: inline-block;
+}
+
+.nav li {
+  position: relative;
+  
+}
+
+.nav > li { 
+  float: left;
+}
+
+.nav > li > a { 
+  margin-bottom: 1px;
+}
+
+
+.nav li:hover > a { 
+  color:blue; 
+}
+
+.nav li li a { 
+  margin-top: 1px;
+}
+
+.nav > li:last-child { 
+  margin-right: 0;
+}
+
+.nav li a:first-child:nth-last-child(2):before { 
+  content: ""; 
+  position: absolute;
+  border: 5px solid transparent; 
+  height: 0; 
+  width: 0; 
+  top: 50% ;
+  right:5px;  
+}
+
+
+/*hide ul in nav class*/
+.nav ul {
+  position: absolute;
+  white-space: nowrap;
+  border-bottom: 5px solid  blue;
+  z-index: 1;
+  left: -99999em;
+}
+
+/*make ul appears when hover*/
+.nav > li:hover > ul {
+  left: auto;
+  margin-top: 5px;
+  min-width: 100%;
+}
+
+.nav > li li:hover > ul { 
+  left: 100%;
+  margin-left: 1px;
+  top: -1px;
+}
+
+/* add arrow hover styling */
+.nav > li > a:first-child:nth-last-child(2):before { 
+  border-top-color: black; 
+}
+
+/*change arrow color when hover*/
+.nav > li:hover > a:first-child:nth-last-child(2):before {
+  border: 5px solid transparent; 
+  border-bottom-color: blue; 
+  margin-top:-5px
 }
