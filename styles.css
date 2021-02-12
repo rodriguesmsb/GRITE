@@ -125,6 +125,11 @@ input{
   color: blue;
 }
 
+.navigation-item:hover{
+  color: blue;
+}
+
+
 
 /*add interactive to nav bar*/
 .nav a {
@@ -156,7 +161,6 @@ input{
 .nav > li > a { 
   margin-bottom: 1px;
 }
-
 
 .nav li:hover > a { 
   color:blue; 
