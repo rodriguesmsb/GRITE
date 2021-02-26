@@ -2,4 +2,4 @@
 
 ## Descrição
 
-Template para web app apresentado durante a iLabthon
+Template usando modelo 12 coluna para página web do GRITE-RO apresentado durante a iLabthon.
